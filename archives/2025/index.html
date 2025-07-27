@@ -157,7 +157,11 @@
       </div>
   </nav>
 </div>
-
+<div class="upyun">
+  This website is provided by
+  <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
+  CND acceleration/cloud storage service
+</div>
         </div>
       </div>
     </div>
@@ -247,7 +251,60 @@
     <span class="author" itemprop="copyrightHolder">YKgUDq</span>
   </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
-  </div>
+  </div><style>
+.upyun-license-wrapper {
+  display: inline-flex;
+  align-items: center;   /* 文字和 logo-container 垂直居中 */
+  font-size: 14px;
+}
+
+/* Logo 容器 */
+.upyun-logo-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;           /* 自行调整大小 */
+  height: 33.1px;
+  margin: 1px;
+}
+
+/* 让 <a> 成为内联块，并彻底去掉所有下划线 */
+.upyun-logo-container a {
+  display: inline-block;
+  text-decoration: none !important;
+  outline: none;          /* 去掉点击时的轮廓（可选） */
+  border: none;
+}
+
+/* 图片本身块级化，防止任何下划线残留 */
+.upyun-logo-container a img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+  
+/* 还可以连同 hover/focus 状态一起写，保险起见 */
+.upyun-logo-container a:hover,
+.upyun-logo-container a:focus,
+.upyun-logo-container a:active {
+  text-decoration: none !important;
+}
+</style>
+
+<div class="upyun-license-wrapper animated">
+  本网站由
+  <span class="upyun-logo-container">
+    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
+       target="_blank"
+       title="Deploy with upyun → https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+      <img src="https://raw.githubusercontent.com/YKgUDq/Image_hosting/master/img/upyunlogo5.png"
+           alt="UpYun Logo">
+    </a>
+  </span>
+  提供CDN加速/云存储服务
+</div>
+
 
     </div>
   </footer>
